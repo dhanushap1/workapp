@@ -27,6 +27,12 @@ export default [
         "error",
         { argsIgnorePattern: "^_", varsIgnorePattern: "^_" },
       ],
+      // Keep exported APIs explicit and avoid runtime imports for types.
+      "@typescript-eslint/explicit-module-boundary-types": "error",
+      "@typescript-eslint/consistent-type-imports": [
+        "error",
+        { prefer: "type-imports", fixStyle: "separate-type-imports" },
+      ],
     },
   },
 
